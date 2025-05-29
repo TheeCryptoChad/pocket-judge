@@ -1,0 +1,217 @@
+{
+  "pattern_id": "7",
+  "name": "Pattern 7",
+  "steps": [
+    {
+      "step": 1,
+      "description": "Run at speed to the far end of the arena past the end marker and do a left rollback—no hesitation.",
+      "primitives": [
+        {
+          "type": "run",
+          "description": "Run at speed to the far end of the arena past the end marker.",
+          "marker": "end"
+        },
+        {
+          "type": "slide",
+          "description": "Do a sliding stop.",
+          "minimum_distance": { "value": 0, "unit": "feet" }
+        },
+        {
+          "type": "spin",
+          "description": "Complete a half spin to the left with no hesitation.",
+          "direction": "left",
+          "expected_spins": 0.5
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "description": "Run to the opposite end of the arena past the end marker and do a right rollback—no hesitation.",
+      "primitives": [
+        {
+          "type": "run",
+          "description": "Run to the opposite end of the arena past the end marker.",
+          "marker": "end"
+        },
+        {
+          "type": "slide",
+          "description": "Do a sliding stop.",
+          "minimum_distance": { "value": 0, "unit": "feet" }
+        },
+        {
+          "type": "spin",
+          "description": "Complete a half spin to the right with no hesitation.",
+          "direction": "right",
+          "expected_spins": 0.5
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "description": "Run past the center marker and do a sliding stop. Back up to the center of the arena or at least ten feet (three meters). Hesitate.",
+      "primitives": [
+        {
+          "type": "run",
+          "description": "Run past the center marker.",
+          "marker": "center"
+        },
+        {
+          "type": "slide",
+          "description": "Do a sliding stop.",
+          "minimum_distance": { "value": 0, "unit": "feet" }
+        },
+        {
+          "type": "backup",
+          "description": "Back up to the center of the arena or at least ten feet.",
+          "distance": { "value": 10, "unit": "feet" },
+          "marker": "center"
+        },
+        {
+          "type": "pause",
+          "description": "Hesitate."
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "description": "Complete four spins to the right. Hesitate.",
+      "primitives": [
+        {
+          "type": "spin",
+          "description": "Complete four spins to the right.",
+          "direction": "right",
+          "expected_spins": 4
+        },
+        {
+          "type": "pause",
+          "description": "Hesitate."
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "description": "Complete four and one-quarter spins to the left so that horse is facing left wall or fence. Hesitate.",
+      "primitives": [
+        {
+          "type": "spin",
+          "description": "Complete four and one-quarter spins to the left so that horse is facing left wall or fence.",
+          "direction": "left",
+          "expected_spins": 4.25
+        },
+        {
+          "type": "pause",
+          "description": "Hesitate."
+        }
+      ]
+    },
+    {
+      "step": 6,
+      "description": "Beginning on the right lead, complete three circles to the right: the first two circles large fast; the third circle small and slow. Change leads at the center of the arena.",
+      "primitives": [
+        {
+          "type": "circle",
+          "circle_type": "full",
+          "description": "Complete a large fast circle to the right.",
+          "direction": "right",
+          "size": "large",
+          "speed": "fast",
+          "lead": "right"
+        },
+        {
+          "type": "circle",
+          "circle_type": "full",
+          "description": "Complete a large fast circle to the right.",
+          "direction": "right",
+          "size": "large",
+          "speed": "fast",
+          "lead": "right"
+        },
+        {
+          "type": "circle",
+          "circle_type": "full",
+          "description": "Complete a small slow circle to the right.",
+          "direction": "right",
+          "size": "small",
+          "speed": "slow",
+          "lead": "right"
+        },
+        {
+          "type": "lead_change",
+          "description": "Change leads at the center of the arena.",
+          "from_lead": "right",
+          "to_lead": "left",
+          "marker": "center"
+        }
+      ]
+    },
+    {
+      "step": 7,
+      "description": "Complete three circles to the left: the first two circles large fast; the third circle small and slow. Change leads at the center of the arena.",
+      "primitives": [
+        {
+          "type": "circle",
+          "circle_type": "full",
+          "description": "Complete a large fast circle to the left.",
+          "direction": "left",
+          "size": "large",
+          "speed": "fast",
+          "lead": "left"
+        },
+        {
+          "type": "circle",
+          "circle_type": "full",
+          "description": "Complete a large fast circle to the left.",
+          "direction": "left",
+          "size": "large",
+          "speed": "fast",
+          "lead": "left"
+        },
+        {
+          "type": "circle",
+          "circle_type": "full",
+          "description": "Complete a small slow circle to the left.",
+          "direction": "left",
+          "size": "small",
+          "speed": "slow",
+          "lead": "left"
+        },
+        {
+          "type": "lead_change",
+          "description": "Change leads at the center of the arena.",
+          "from_lead": "left",
+          "to_lead": "right",
+          "marker": "center"
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "description": "Begin a large circle to the right but do not close this circle. Run straight down the right side of the arena past the center marker and do a sliding stop at least twenty feet (six meters) from the wall or fence. Hesitate to demonstrate completion of the pattern.",
+      "primitives": [
+        {
+          "type": "circle",
+          "circle_type": "partial",
+          "description": "Begin a large circle to the right but do not close this circle.",
+          "direction": "right",
+          "size": "large",
+          "speed": "fast",
+          "lead": "right"
+        },
+        {
+          "type": "run",
+          "description": "Run straight down the right side of the arena past the center marker.",
+          "marker": "center"
+        },
+        {
+          "type": "slide",
+          "description": "Do a sliding stop at least twenty feet from the wall or fence.",
+          "minimum_distance": { "value": 20, "unit": "feet" }
+        },
+        {
+          "type": "pause",
+          "description": "Hesitate to demonstrate completion of the pattern."
+        }
+      ]
+    }
+  ]
+}

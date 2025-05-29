@@ -1,0 +1,45 @@
+# Video Processing Settings
+video:
+  target_resolution: [1280, 720] # 720p
+  target_fps: 30
+  target_aspect_ratio: 16/9
+
+# Pose Detection Settings
+pose:
+  confidence_threshold: 0.5
+  min_tracking_confidence: 0.5
+  min_detection_confidence: 0.5
+
+# Model Settings
+model:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 100
+  early_stopping_patience: 10
+
+# Data Processing
+data:
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  random_seed: 42
+
+# Maneuver Types
+maneuvers:
+  - circles
+  - spins
+  - sliding_stops
+  - rollbacks
+  - lead_changes
+  - backups
+  - run_downs
+  - pauses
+
+# Scoring Ranges
+scoring:
+  total_score_range: [0, 100]
+  maneuver_score_range: [-1.5, 1.5]
+  penalty_values:
+    -1.0: "Incorrect lead"
+    -2.0: "Fall of horse"
+    -3.0: "Fall of rider"
