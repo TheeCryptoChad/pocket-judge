@@ -33,5 +33,6 @@ model.train(
     epochs=100,
     imgsz=640,
     batch=128,
+    workers = 6,
     project=os.path.join(SCRIPT_DIR, "../models")
 )
