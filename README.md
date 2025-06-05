@@ -13,19 +13,26 @@ An AI-based system for predicting NRHA (National Reining Horse Association) rein
 ## Project Structure
 
 ```
-pocket-judge/
-├── data/                   # Data storage
-│   ├── raw/               # Raw video files
-│   ├── processed/         # Processed video data
-│   └── patterns/          # NRHA pattern definitions
-├── src/                   # Source code
-│   ├── data/             # Data processing modules
-│   ├── models/           # ML model implementations
-│   ├── preprocessing/    # Video preprocessing pipeline
-│   └── utils/            # Utility functions
-├── tests/                # Test files
-├── notebooks/            # Jupyter notebooks for analysis
-└── configs/              # Configuration files
+pocket-judge
+    ├──models
+        ├──pose
+            ├──data
+            ├──runs
+            ├──scripts
+            README.md
+        ├──sequence
+            ├──data
+            ├──runs
+            ├──scripts
+            README.md (how to train and run)
+        ├──score
+            ├──data
+            ├──runs
+            ├──scripts
+            README.md (how to train and run)
+    ├──configs
+    ├──apps
+        ├──(web applications)
 ```
 
 ## Setup

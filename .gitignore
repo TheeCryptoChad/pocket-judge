@@ -34,3 +34,11 @@ env/
 # OS
 .DS_Store
 Thumbs.db 
+
+
+
+models/**/data
+# !models/**/data/*.tar.gz
+# models/**/models
+
+/*.pt
